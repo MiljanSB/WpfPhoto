@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfPhoto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPhoto"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Height="750" Width="550">
+    <Grid>
+        <Border BorderBrush="red" BorderThickness="2" HorizontalAlignment="Left" Height="191" Margin="33,27,0,0" VerticalAlignment="Top" Width="474">
+            <ScrollViewer>
+                <WrapPanel Name="WrapPanel1" />
+
+            </ScrollViewer>
+        </Border>
+        <GroupBox x:Name="GroupBox1" Header="Fotografija" HorizontalAlignment="Left" Height="400" Margin="33,256,0,0" VerticalAlignment="Top" Width="474">
+            <Grid>
+                <Button x:Name="ButtonOdaberi" Content="Odaberi sliku" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="auto" Click="ButtonOdaberi_Click"/>
+                <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="100" Margin="105,10,0,0" VerticalAlignment="Top" Width="153">
+                    <Image x:Name="Image1" Stretch="Fill"/>
+                </Border>
+                <TextBlock HorizontalAlignment="Left" Margin="13,126,0,0" TextWrapping="Wrap" Text="Naziv:" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="13,159,0,0" TextWrapping="Wrap" Text="Datum:" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="13,199,0,0" TextWrapping="Wrap" Text="Opis:" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBoxNaziv" HorizontalAlignment="Left" Height="23" Margin="82,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+                <DatePicker Name="DatePicker1" HorizontalAlignment="Left" Margin="82,159,0,0" VerticalAlignment="Top" Width="176"/>
+                <TextBox x:Name="TextBoxOpis" AcceptsReturn="True" HorizontalAlignment="Left" Height="78" Margin="82,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+                <Button x:Name="ButtonSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="13,305,0,0" VerticalAlignment="Top" Width="75" Click="ButtonSacuvaj_Click"/>
+                <Button x:Name="ButtonOdustani" Content="Odustani" HorizontalAlignment="Left" Margin="115,305,0,0" VerticalAlignment="Top" Width="75" Click="ButtonOdustani_Click"/>
+
+            </Grid>            
+        </GroupBox>
+        <Button x:Name="ButtonNovi" Content="Novi unos" HorizontalAlignment="Left" Margin="33,676,0,0" VerticalAlignment="Top" Width="75" Click="ButtonNovi_Click"/>
+        <Button x:Name="ButtonPromeni" Content="Promeni" HorizontalAlignment="Left" Margin="128,676,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPromeni_Click"/>
+        <Button x:Name="ButtonObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="229,676,0,0" VerticalAlignment="Top" Width="75" Click="ButtonObrisi_Click"/>
+
+    </Grid>
+</Window>

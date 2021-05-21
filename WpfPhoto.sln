@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPhoto", "WpfPhoto\WpfPhoto.csproj", "{FADBABF0-32C1-4C54-9639-6C0E835FFA79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FADBABF0-32C1-4C54-9639-6C0E835FFA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADBABF0-32C1-4C54-9639-6C0E835FFA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADBABF0-32C1-4C54-9639-6C0E835FFA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADBABF0-32C1-4C54-9639-6C0E835FFA79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C3F22E6-2D16-484D-9451-EBCB3B3707D9}
+	EndGlobalSection
+EndGlobal
